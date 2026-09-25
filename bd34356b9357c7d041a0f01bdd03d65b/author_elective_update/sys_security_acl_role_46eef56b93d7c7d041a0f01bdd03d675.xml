@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 08:49:33</sys_created_on>
+        <sys_id>46eef56b93d7c7d041a0f01bdd03d675</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1919740_societ_1_society_maintenance_case.x_1919740_societ_1.user</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_security_acl display_value="x_1919740_societ_1_society_maintenance_case">91eeb56b93d7c7d041a0f01bdd03d668</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_46eef56b93d7c7d041a0f01bdd03d675</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-19 08:49:33</sys_updated_on>
+        <sys_user_role display_value="x_1919740_societ_1.user" name="x_1919740_societ_1.user">6a34756b9357c7d041a0f01bdd03d62c</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</application>
+        <file_path/>
+        <instance_id>610511643b9047d8986d048aa4e45adb</instance_id>
+        <instance_name>dev381157</instance_name>
+        <name>sys_security_acl_role_46eef56b93d7c7d041a0f01bdd03d675</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-19 08:49:33</sys_created_on><sys_id>46eef56b93d7c7d041a0f01bdd03d675</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1919740_societ_1_society_maintenance_case.x_1919740_societ_1.user</sys_name><sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package><sys_policy/><sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope><sys_security_acl display_value="x_1919740_societ_1_society_maintenance_case">91eeb56b93d7c7d041a0f01bdd03d668</sys_security_acl><sys_update_name>sys_security_acl_role_46eef56b93d7c7d041a0f01bdd03d675</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-19 08:49:33</sys_updated_on><sys_user_role display_value="x_1919740_societ_1.user" name="x_1919740_societ_1.user">6a34756b9357c7d041a0f01bdd03d62c</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1471932215</payload_hash>
+        <record_name>x_1919740_societ_1_society_maintenance_case.x_1919740_societ_1.user</record_name>
+        <reverted_from/>
+        <source>4234356b9357c7d041a0f01bdd03d6c3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 08:49:34</sys_created_on>
+        <sys_id>92eef56b93d7c7d041a0f01bdd03d69d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0b8db4c560000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-19 08:49:34</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>52eef56bc7d7c7d04bcc1e2c6279309c</update_guid>
+        <update_guid_history>52eef56bc7d7c7d04bcc1e2c6279309c:1471932215</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1919740_societ_1_society_maintenance_case.x_1919740_societ_1.user">d6a464009323cbd041a0f01bdd03d678</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-20 15:32:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>88d1bb172f8e489090f71355f19ff040</sys_id>
+        <sys_metadata>46eef56b93d7c7d041a0f01bdd03d675</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1919740_societ_1_society_maintenance_case.x_1919740_societ_1.user</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_parent display_value="">91eeb56b93d7c7d041a0f01bdd03d668</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_scope_delete display_value="">88476196a39e447ead7944b2d056ff24</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_46eef56b93d7c7d041a0f01bdd03d675</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_46eef56b93d7c7d041a0f01bdd03d675">92eef56b93d7c7d041a0f01bdd03d69d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-20 15:32:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

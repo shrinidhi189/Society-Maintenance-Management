@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cmn_schedule">
+    <cmn_schedule action="INSERT_OR_UPDATE">
+        <cal_type/>
+        <calendar_name>24x7 Maintenance Schedule</calendar_name>
+        <description>Always-on schedule for 24x7 maintenance SLA tracking</description>
+        <document/>
+        <document_key/>
+        <is_legacy_schedule>true</is_legacy_schedule>
+        <label>24x7 Maintenance Schedule</label>
+        <name>24x7 Maintenance Schedule</name>
+        <parent/>
+        <plural_label/>
+        <read_only>false</read_only>
+        <sys_class_name>cmn_schedule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 07:06:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>91ab02f49363831441a0f01bdd03d672</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>24x7 Maintenance Schedule</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name>cmn_schedule_91ab02f49363831441a0f01bdd03d672</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 07:06:34</sys_updated_on>
+        <time_zone/>
+        <type>Schedule</type>
+    </cmn_schedule>
+</record_update>

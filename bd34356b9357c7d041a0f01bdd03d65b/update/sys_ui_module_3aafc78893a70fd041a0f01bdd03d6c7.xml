@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Society Asset">3eafc78893a70fd041a0f01bdd03d6c1</application>
+        <filter/>
+        <name>Society Assets</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_1919740_societ_1.society_asset_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 03:59:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3aafc78893a70fd041a0f01bdd03d6c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Society Assets</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name>sys_ui_module_3aafc78893a70fd041a0f01bdd03d6c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 03:59:22</sys_updated_on>
+        <table>x_1919740_societ_1_society_asset</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

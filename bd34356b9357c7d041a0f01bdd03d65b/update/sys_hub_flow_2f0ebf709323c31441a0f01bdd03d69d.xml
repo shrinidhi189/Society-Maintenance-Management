@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,timeFromCreateToActivate=81327000,viewActivatedIn=diagramming</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>Automates complaint processing, priority-based notification, assignment, and FSM work order handling.</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>society_complaint__new_case_processing</internal_name>
+        <label_cache>[{"name":"Created_1.current.description","label":"Trigger - Record Created➛Society Complaint Case Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_1919740_societ_1_society_complaint_case","column_name":"description","choices":null,"usedInstances":{"ca1e44c3-cc94-4f37-9bb9-e2d757216bba":["description"]},"attributes":null},{"name":"Created_1.current.priority","label":"Trigger - Record Created➛Society Complaint Case Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"x_1919740_societ_1_society_complaint_case","column_name":"priority","choices":[{"label":"-- None --","sequence":-1.0,"used":false,"selected":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"sn_customerservice_case","dependent_values":[""],"dependent_values_map":{"":"1 - Critical"}},"sequence":1.0,"used":false,"selected":false,"label":"1 - Critical","image":"","reference":false,"rawLabel":"1 - Critical","missing":false,"value":"1"},{"parameters":{"name":"sn_customerservice_case","dependent_values":[""],"dependent_values_map":{"":"2 - High"}},"sequence":2.0,"used":false,"selected":false,"label":"2 - High","image":"","reference":false,"rawLabel":"2 - High","missing":false,"value":"2"},{"parameters":{"name":"sn_customerservice_case","dependent_values":[""],"dependent_values_map":{"":"3 - Moderate"}},"sequence":3.0,"used":false,"selected":false,"label":"3 - Moderate","image":"","reference":false,"rawLabel":"3 - Moderate","missing":false,"value":"3"},{"parameters":{"name":"sn_customerservice_case","dependent_values":[""],"dependent_values_map":{"":"4 - Low"}},"sequence":4.0,"used":false,"selected":false,"label":"4 - Low","image":"","reference":false,"rawLabel":"4 - Low","missing":false,"value":"4"}],"usedInstances":{"61a3e2ff-dc22-43c5-aa6a-769767feef56":["condition"],"ca1e44c3-cc94-4f37-9bb9-e2d757216bba":["priority"]},"attributes":null},{"name":"Created_1.current","label":"Trigger - Record Created➛Society Complaint Case Record","reference":"x_1919740_societ_1_society_complaint_case","reference_display":"Society Complaint Case","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{"2c01a726-49b3-4243-b8e0-c2efd7b3628f":["record"],"ca1e44c3-cc94-4f37-9bb9-e2d757216bba":["initiated_from"],"0b3e5a55-5b15-487c-81f1-668060b9eda0":["record"]},"attributes":{}}]</label_cache>
+        <master_snapshot>6b7d0bcd93ab071441a0f01bdd03d69e</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Society Complaint - New Case Processing</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>5364fcd1932b471441a0f01bdd03d682</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 15:17:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2f0ebf709323c31441a0f01bdd03d69d</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>Society Complaint - New Case Processing</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name>sys_hub_flow_2f0ebf709323c31441a0f01bdd03d69d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-25 11:38:45</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>7b2f1de193efc71441a0f01bdd03d6ce</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=2f0ebf709323c31441a0f01bdd03d69d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2f0ebf709323c31441a0f01bdd03d69d"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1919740_societ_1_society_complaint_case">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 13:53:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5364fcd1932b471441a0f01bdd03d682</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 13:53:30</sys_updated_on>
+        <table>x_1919740_societ_1_society_complaint_case</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>2f0ebf709323c31441a0f01bdd03d69d</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 13:53:31</sys_created_on>
+        <sys_id>9764fcd1932b471441a0f01bdd03d683</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 13:53:31</sys_updated_on>
+        <trigger display_value="">5364fcd1932b471441a0f01bdd03d682</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=2f0ebf709323c31441a0f01bdd03d69d^sys_idNOT IN9764fcd1932b471441a0f01bdd03d683"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2f0ebf709323c31441a0f01bdd03d69d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2f0ebf709323c31441a0f01bdd03d69d^sys_idNOT INa70ebf709323c31441a0f01bdd03d6a2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2f0ebf709323c31441a0f01bdd03d69d</id>
+        <name>Society Complaint - New Case Processing</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 15:17:29</sys_created_on>
+        <sys_id>a70ebf709323c31441a0f01bdd03d6a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 15:17:29</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a70ebf709323c31441a0f01bdd03d6a2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2f0ebf709323c31441a0f01bdd03d69d^sys_idNOT IN1c6ed0059327c31441a0f01bdd03d62f,635e50059327c31441a0f01bdd03d6b4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Society Complaint - New Case Processing">2f0ebf709323c31441a0f01bdd03d69d</model>
+        <model_id>2f0ebf709323c31441a0f01bdd03d69d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_2f0ebf709323c31441a0f01bdd03d69d</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 17:38:42</sys_created_on>
+        <sys_id>1c6ed0059327c31441a0f01bdd03d62f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 04:58:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1c6ed0059327c31441a0f01bdd03d62f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Society Complaint - New Case Processing">2f0ebf709323c31441a0f01bdd03d69d</model>
+        <model_id>2f0ebf709323c31441a0f01bdd03d69d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_2f0ebf709323c31441a0f01bdd03d69d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 17:38:39</sys_created_on>
+        <sys_id>635e50059327c31441a0f01bdd03d6b4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 04:58:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=635e50059327c31441a0f01bdd03d6b4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2f0ebf709323c31441a0f01bdd03d69d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2f0ebf709323c31441a0f01bdd03d69d"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=2f0ebf709323c31441a0f01bdd03d69d^sys_idNOT IN3d5ed0cd93a3c31441a0f01bdd03d622"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Society Complaint - New Case Processing">2f0ebf709323c31441a0f01bdd03d69d</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 17:38:32</sys_created_on>
+        <sys_id>3d5ed0cd93a3c31441a0f01bdd03d622</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 13:52:52</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY2W7jNhT9FUFPLeABtNhxlLepk0EDTCeo7WkfglSgJNImSpMeiVLiGeTfe6nFlrV4ieWp85SI67mH555L+vGHzpCHmX6jT5HHsN7TKZc45IhNV0sMzVI1uxwtVN8C8QBJEa70GxnGuKeTUCymeLFkSMJgglgEjSIMcKjfmD09QSzGk1V0H8BKMD9dJl9Tz7vh+8U1HdMZ9g03Ej7F0jXzf1auL9TigMn1UaTmBDSChtVf+dRJNk4bFeO0UTbOn1MWhJjrN49PPX2JQthaKlg/Kl1UYfOJjxwLG75t2pZlGNZ13/SubM+0Ahthw4AFqzxVYpENdG2IwC8S8wAHa45qTIYYBQ+crdYj5hBMxtoCvUT0O6x+bahxBAN2H2d96083JyZr9ueC+vhhKangWUuGM+sULF7wLxl+RSkmKGayoBRa4gjWw0sFWYHIEZHJXDyPiw0/UZ5Gl3cy4SO2/kJShtSLJY4U4YQyoN7NuIlEHKbox3ejh/Gt+/fH6ej3u7E7vptMx/ej6d2t/prG5X6L1YoZwhyLm4XzutbBJ4qZOkAeLzxA09MjP6RL+dGXNCkU+drbqHwkeEBTVmpK94uuaFvpRfS7pG4YrWL3SzsWgv/n7s+6lLPG43R7dYVQgFGLbj1S0m058gZosoGEcnS7FJy3HCLhvmH8TyLODeutGn5GXEauFC4KArfEEqQ8LKxCFAFmt5v9oJ3OZiB7ypexjPaKOovtda+Cw5jDBHd9HnUdp7St+ftMI0DzCFk4wd/ijPQPYEmkoCrHTz7nG4xjrgmu+XEIHEkNjlkrNtNSkEoa5H6BZjnRsDDDvixpg3yNyl9/0CiifFYKpg1LOqAOhq3KiArLPQXDU5cpXj+SpBJPJdWPznPTJMTDxDKGKstNw/aIaQyNASKBbRi+VcrzOphWlLIimLPk+3HZHqVSZQecfpXiHLxRzpWDpJxs50FBgpJIbiqjbqCZHUGzFLSKOdpHueNallnz7bY6d4XW8c0ABQmCGUER4yGV/wB/JEw8g++e7o1EhHgWipgHVVNSW2gU/m6NOI8resj/dzeKzQjtl/xQf700h9wcSiFrxFcdeKNNTM/BfWyAJdrght7AcTwfWYQMr4bYMiveuIHRiO1deOKeY0+adNPmj41CTpr0f4QzngCw5pJHAzzdH3NhNrpj1vc+fPB5jrkLUEOXKaer2eGM0QAXfd1me23rZJPfp2Y8uXb8gTkc+kN48UDGkz72kNm3BsgZXtnXg0rG16DsgikbmPkp76BoFaVAWtzga9Z1WQ/7c8o2wlKqcnRyDU+no2y/UvlUJ6Sl/iJCTbGr3W8GahMMxTB9GJ+rpgs5r1VzQPIbtG8hUTfDL4J/aEB3xocYh5fCIcS1ILu0u0dFUcn2IZz8OsP964FD7GY/Ik6TH23AtMO8+LvIgVJIWkXVdCk5NDGTxvxuvUW8IbcqMilfL3bcf7oixeycFOt8pNgn37mKXGx9kr4F7Duqd+klpLOiJzh2BWm0bUq0/KdJHGjeSpNzDNwyuGXDzpqCcca6kt2ea1UPmrX88nO2gqbOpErKrdCgQwt/Ci3nqWoV3XT7tsbBEA0GdstN26m+rZsA7cF78TXuaIkkTYrbWeiOW7e6ZmOpKyXUtiIOLGKdRt1cyU6LurGW7Yv69Cq165eBBhQXWn+e/gNupJZV+B8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2f0ebf709323c31441a0f01bdd03d69d^sys_idNOT IN2aa5be0d93e7071441a0f01bdd03d64f,81fb64cd9367c31441a0f01bdd03d6af,96dfbe41936b071441a0f01bdd03d61b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Society Complaint - New Case Processing">2f0ebf709323c31441a0f01bdd03d69d</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 04:39:40</sys_created_on>
+        <sys_id>2aa5be0d93e7071441a0f01bdd03d64f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 16:57:58</sys_updated_on>
+        <ui_id>2c01a726-49b3-4243-b8e0-c2efd7b3628f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VV22rjMBD9laBnE+w4TZu8LQmBhV6gXfrSFDGW5FQgX1aS22ZD/n3HkuyEtnRT6EvYPEVz0zmjOeOHLZGczMhY8DiZJhOWJmk6iuPRxTjJJmmWjHgKQiQkIiUUAiO1YJXmeH4G1bSG7XauBVjBaTJkjdaitLsd+rk0tYLNfQhDC3uSiqOfzB4eI1KDxopWaDLbvnEdC0lBJhSG3naY3mK0m7o984o1BeKisjNehsxF8Ax+LtCDSS2cJI6IeLWi5AKB5KCMiEgBJQdb6Q2ZWd2gAUnzm1Jt+ognWVpPtIBXI//gzeO4jcsFMmOhCf2RhgZ5c74AC3dYmdlG9/2qJBPG94SLHBpl54c2H3BTW1mVPsVCprrsSjVFee07QvoCB+/RGAQh6pZni9zTyu+eqpfbDuRSlq4lgaKqGKj+BNZqmTW2hbMlQgnX4wLqWpZrWuvqWbpkhFIM1woPw1xVL3inketyCKzFPcSuwnCJ9oUz34OWLYkrLIPJu4iYjZkrMGZPBXtIfzctEk8sUKCuC64F1E1Cm8y0rO0PvOpZBOC7KAx9dvbZhLHpfqAOau4H/5Vi8vR8HFNTMSksTcKfDUXC+LQ4D5SBEe/FcOfjBvMubjD3cV+TyBEEOon8coPxMaGgkne2y8PcwbV3BI2cfZtGLk5JI4HGyYvkX9KIR58u34NJcmowB7JAEIjQsVzrqqlXTRynfLvqNLAis1UvgCUwqST+uYIS1q43KxKtfDEXmePNObuYTlM4RzTjcQJxHicZ51h1cpa5cGSPu/3I+A8+TieB+Wu74YgX7HbDUgrFzQdP2i0G0W4pK6h/4jfLITgH98HZf0S/bUMkk9j9TmhP/Dff0se/AU4PJUIKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2aa5be0d93e7071441a0f01bdd03d64f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Society Complaint - New Case Processing">2f0ebf709323c31441a0f01bdd03d69d</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>61a3e2ff-dc22-43c5-aa6a-769767feef56</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 18:38:01</sys_created_on>
+        <sys_id>81fb64cd9367c31441a0f01bdd03d6af</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 16:57:58</sys_updated_on>
+        <ui_id>0b3e5a55-5b15-487c-81f1-668060b9eda0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VV207jMBD9lcrPTRUnbZP2DRUhIbEgLZeXFbIce0wtORccB+hW/PvaiVtaCuWyC9K+JeMZz5kzczy/lkhyNEVDnHI+ETgUGOMQhyMc4RRSyFgyTiBOUR8VNAfrWZRGCsmokWVhrXdUNc6cCj5KwnA0iSFhMR4OMQ1FiDPOw5iP08i6cllXii6ufMR5ySSYRW9W5tYsC9MLepf6BuzHgQJtbASbS8U1FGj667qPKqotBAMaTZfPjt5bg6IZKOt6ul3Ey6WZReWsGgTYRAy86cTf8XPDXmruYMV9BA8GCg4Wj6Cqhj7KacGpKfUCTY1urEED5WeFWqw95rZ2ex9yvg+1/G2TxlF/I+8U1Ysa7iwzBHIqFaHMQ1z7EE/ubm3ikBp6blMz02jo8rB5KRnUHXccBG2UmW3aOoezqr2jDTE0U/uQsFI1eXHaEUmFAGaAEyFBcVIWpI1B62SrGbCWprbgoXKkORo6jsT5vLxfE3wki5Zez5cqGVXrP3EOVLP5kcvkeugQ9BE1RsusMa6gJWrkxW4vt7o9RS6xg9O6vtTjGgzx8IntKCWi1Dl1nWuRWA9QkDtqclpVsrghlS7vZIvc0pMPbpT9GQhV3tt7anlTDDr2Bu62wZG1H7bmK6qlY/uHvcYGO0yXhbxt4Lid8gmGJI7SYDKOWDCEeBRkPI4DjDMGQEFEHKPHvmvUTNG69i3phoXcNo461HbCc0668l1G0rLngpmWlTmw8O7AM/3YXz0VfJ/Moo2nQgOzwth4JJbLmZ1+Nxh4wBptmTWPj7svw8eV/zYkte6ox/Qco1c7L1nTNlHyZ3o/9Ce948MnxeP9iveWz0j+FXX/e0U/F++XqPQVPW6zva29bb6/RVsch0k8CVmQRKM4GIaMBlnKs4BmkRgNh+N0nH2tttL9Kyx6mtuNO5/09UDwBE+SYUjqdrkS7D8WhK22LGG0faze3Mazzu9jSnxHASslXrTz93JBXow7tpPN2N5pd+ClGH1Qit0Mv6DENPyPlLjegn8rxS2ut5W4xfa3CJFlWSYymAR2qdkll0AapBFNAhiFLBZRHIaJ+IQQX5Pf9R93JZ87BwsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=81fb64cd9367c31441a0f01bdd03d6af"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Society Complaint - New Case Processing">2f0ebf709323c31441a0f01bdd03d69d</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>61a3e2ff-dc22-43c5-aa6a-769767feef56</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 05:24:10</sys_created_on>
+        <sys_id>96dfbe41936b071441a0f01bdd03d61b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-25 11:38:34</sys_updated_on>
+        <ui_id>ca1e44c3-cc94-4f37-9bb9-e2d757216bba</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VyW7bMBD9FYNnwRAtx9utSOBTFqAJ0kPcCJQ4solSokpRTlxD/97hYsdwYiQFeglan8yZN8P3ZqEetkRwMiMjDvF0Skd5QpNkEMeDyZBmoySjA54woBmJSMVKQOSayRYaPLs/aODQ5FrURqhq0cZxwrfbcw3MAE9pP2+1hsr0D0Bd91hrobQwm9P4HQLBjUGfR9JH1jRiWZUISZdatXXIsCBcNLVkmwWZLcic5UJicO+KicpAxaocenfAygWJFp63w03GOZ2OUXcCWTymwyFlcRHTjHPMOTorHLzZNKngH8R3gSBqMepNblcg16LqzUEjLazKEaV4Oi4GkzN7xXj46gqaOLhhmfRwS65tQB8zfT9N9ygqYYQre6FVebIVXYe9Dgru/7f8n2l5vhKS44nMHr5HpGYa19+AJrPtkeuj74dkGUiEzgVI3rzxoJhNbc8GSiydgdQ/MN5+GYLvgrN3H5xKc0uKRgSese8ckE3BZAMRKbHazCi9ITOjWzSgTn5Tyc0escJZwaTEYp8b8Quvp6PY/Sy6ABSZg0fsj2norTcXF8ywW8yfm1YHaL5SIkdJrjwcCtZKc35o84Abtxs+xPU3RCvZltW1Lw7ZJ9jtHlqw/SmH2qq1/L244nalnr7uSM5F5eoShEqVM7k/MWO0yFpj6WwJSHDLVbK6FtUyrbVaCxeMVMr+UuKhX0j1hHfaQe+z3PLuY21Zf472C2e+Z1pYEVeYBoO7yA7nucTleJGCNUx/tpaJFxYkpK4KrgSpGwob7N6OL3jVGgLxLtp9rCjEZyeHDYYvs3WQ8+WD9VSmfmpevWvflP7Ruwm+P1yA9zntFuDO9fptjrsdOLZdHsb2rr0jzH78t2Z/8pmmPsj49GN/ati//waoEOXcmwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=96dfbe41936b071441a0f01bdd03d61b"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2f0ebf709323c31441a0f01bdd03d69d"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2f0ebf709323c31441a0f01bdd03d69d^sys_idNOT INbfee54459327c31441a0f01bdd03d6b4"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7bee54459327c31441a0f01bdd03d6b3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Society Complaint - New Case Processing">2f0ebf709323c31441a0f01bdd03d69d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 17:41:07</sys_created_on>
+        <sys_id>bfee54459327c31441a0f01bdd03d6b4</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 13:52:53</sys_updated_on>
+        <ui_id>61a3e2ff-dc22-43c5-aa6a-769767feef56</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy24TMRT9lcrraDSPJqLZVUGVkIBIbekG2pHHvpNYeGzjR9Ihyr9zPY80IkFUCHbsxsf3cc69x7MjOngTvLvX186JlSLzz48TIlTE8HtHFG2AzAnTigsvtCITsqEyRGy3W1igHniZJSxYC8onxgpthW/3+y8hTQuePS1vXxOXY10unJG0ffhH5dlaSI63vURDLSrzYMl899OVbw2UklYgkcWdt0KtMF1wPF3RaT3N0ikr8lmRp2n+5jKrZkWV5bygcDnDuDFxcTSxM0OMTRByY3lteeSSpxMCzx4UB+xXU+lgQhqqOPXatmTubUAA9fKlku0hYi2Ux2okxj478R1ipTSNkTWgMAb97eFYDsPuYbbWgsHSdNw6xNNKDjlMy9Coj72EuCaoaZB+XBMiwWE9MJF0pDFwqu/Wens7NrwRqhM4XErNqDycqMcxVMGDi9sACQ0WKhtqDA6nNFZvRJeMXJpkJfGQ1FJvsWn0bEJZJJ7gjGhyg/jbDn6gVkQVH7AMJuMGXemYFWbU1jUn+24q5bcQ+fT6BiVlPwwM6NOusc0GBtL7yenbKDvg5YF8sissc7HQDY46bujE42ci/oZN65TW2RXLztuUFudsevG+Q07NOqr6hWOz3zh2QF5l2en0v2OPHRtpVtQJVnZ/ZCwX3/8fW/YxWrNv4XoPcWDCIZP7iL0b//rxosWtC3YMbbX9GjW8YPsfVAuegD8GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2f0ebf709323c31441a0f01bdd03d69d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2f0ebf709323c31441a0f01bdd03d69d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2f0ebf709323c31441a0f01bdd03d69d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 17:38:43</sys_created_on>
+        <sys_id>206ed0059327c31441a0f01bdd03d637</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 17:38:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2f0ebf709323c31441a0f01bdd03d69d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-23 17:38:41</sys_created_on>
+        <sys_id>486e90059327c31441a0f01bdd03d6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-23 17:38:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2f0ebf709323c31441a0f01bdd03d69d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2f0ebf709323c31441a0f01bdd03d69d"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=diagramming</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description>Automates complaint processing, priority-based notification, assignment, and FSM work order handling.</description>
+        <flow_priority/>
+        <internal_name>society_complaint__new_case_processing</internal_name>
+        <label_cache>[{"name":"Created_1.current.description","label":"Trigger - Record Created➛Society Complaint Case Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_1919740_societ_1_society_complaint_case","column_name":"description","usedInstances":{"ca1e44c3-cc94-4f37-9bb9-e2d757216bba":["description"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Society Complaint Case Record","reference":"x_1919740_societ_1_society_complaint_case","reference_display":"Society Complaint Case","type":"reference","base_type":"reference","usedInstances":{"0b3e5a55-5b15-487c-81f1-668060b9eda0":["record"],"2c01a726-49b3-4243-b8e0-c2efd7b3628f":["record"]},"attributes":{}},{"name":"Created_1.current.priority","label":"Trigger - Record Created➛Society Complaint Case Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"x_1919740_societ_1_society_complaint_case","column_name":"priority","choices":[{"label":"-- None --","sequence":-1.0,"used":false,"selected":false,"image":"","reference":false,"rawLabel":"-- None --","missing":false,"value":""},{"parameters":{"name":"sn_customerservice_case","dependent_values":[""],"dependent_values_map":{"":"1 - Critical"}},"sequence":1.0,"used":false,"selected":false,"label":"1 - Critical","image":"","reference":false,"rawLabel":"1 - Critical","missing":false,"value":"1"},{"parameters":{"name":"sn_customerservice_case","dependent_values":[""],"dependent_values_map":{"":"2 - High"}},"sequence":2.0,"used":false,"selected":false,"label":"2 - High","image":"","reference":false,"rawLabel":"2 - High","missing":false,"value":"2"},{"parameters":{"name":"sn_customerservice_case","dependent_values":[""],"dependent_values_map":{"":"3 - Moderate"}},"sequence":3.0,"used":false,"selected":false,"label":"3 - Moderate","image":"","reference":false,"rawLabel":"3 - Moderate","missing":false,"value":"3"},{"parameters":{"name":"sn_customerservice_case","dependent_values":[""],"dependent_values_map":{"":"4 - Low"}},"sequence":4.0,"used":false,"selected":false,"label":"4 - Low","image":"","reference":false,"rawLabel":"4 - Low","missing":false,"value":"4"}],"usedInstances":{"61a3e2ff-dc22-43c5-aa6a-769767feef56":["condition"],"ca1e44c3-cc94-4f37-9bb9-e2d757216bba":["priority"]}}]</label_cache>
+        <master>true</master>
+        <name>Society Complaint - New Case Processing</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Society Complaint - New Case Processing">2f0ebf709323c31441a0f01bdd03d69d</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 06:23:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6b7d0bcd93ab071441a0f01bdd03d69e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 13:53:22</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=6b7d0bcd93ab071441a0f01bdd03d69e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6b7d0bcd93ab071441a0f01bdd03d69e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6b7d0bcd93ab071441a0f01bdd03d69e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6b7d0bcd93ab071441a0f01bdd03d69e^sys_idNOT INeb7d0bcd93ab071441a0f01bdd03d69f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6b7d0bcd93ab071441a0f01bdd03d69e</id>
+        <name>Society Complaint - New Case Processing</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 06:23:47</sys_created_on>
+        <sys_id>eb7d0bcd93ab071441a0f01bdd03d69f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 06:23:47</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=eb7d0bcd93ab071441a0f01bdd03d69f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6b7d0bcd93ab071441a0f01bdd03d69e^sys_idNOT IN3b7d0bcd93ab071441a0f01bdd03d6c3,6b7d0bcd93ab071441a0f01bdd03d6a1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Society Complaint - New Case Processing">6b7d0bcd93ab071441a0f01bdd03d69e</model>
+        <model_id>6b7d0bcd93ab071441a0f01bdd03d69e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6b7d0bcd93ab071441a0f01bdd03d69e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 06:23:48</sys_created_on>
+        <sys_id>3b7d0bcd93ab071441a0f01bdd03d6c3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 13:53:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3b7d0bcd93ab071441a0f01bdd03d6c3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Society Complaint - New Case Processing">6b7d0bcd93ab071441a0f01bdd03d69e</model>
+        <model_id>6b7d0bcd93ab071441a0f01bdd03d69e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_6b7d0bcd93ab071441a0f01bdd03d69e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 06:23:47</sys_created_on>
+        <sys_id>6b7d0bcd93ab071441a0f01bdd03d6a1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 13:53:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6b7d0bcd93ab071441a0f01bdd03d6a1"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6b7d0bcd93ab071441a0f01bdd03d69e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6b7d0bcd93ab071441a0f01bdd03d69e"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=6b7d0bcd93ab071441a0f01bdd03d69e^sys_idNOT IN098d4bcd93ab071441a0f01bdd03d64e"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Society Complaint - New Case Processing">6b7d0bcd93ab071441a0f01bdd03d69e</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 06:23:53</sys_created_on>
+        <sys_id>098d4bcd93ab071441a0f01bdd03d64e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 13:53:14</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY2W7jNhT9FUFPLeABtNhxlLepk0EDTCeo7WkfglSgJNImSpMeiVLiGeTfe6nFlrV4ieWp85SI67mH555L+vGHzpCHmX6jT5HHsN7TKZc45IhNV0sMzVI1uxwtVN8C8QBJEa70GxnGuKeTUCymeLFkSMJgglgEjSIMcKjfmD09QSzGk1V0H8BKMD9dJl9Tz7vh+8U1HdMZ9g03Ej7F0jXzf1auL9TigMn1UaTmBDSChtVf+dRJNk4bFeO0UTbOn1MWhJjrN49PPX2JQthaKlg/Kl1UYfOJjxwLG75t2pZlGNZ13/SubM+0Ahthw4AFqzxVYpENdG2IwC8S8wAHa45qTIYYBQ+crdYj5hBMxtoCvUT0O6x+bahxBAN2H2d96083JyZr9ueC+vhhKangWUuGM+sULF7wLxl+RSkmKGayoBRa4gjWw0sFWYHIEZHJXDyPiw0/UZ5Gl3cy4SO2/kJShtSLJY4U4YQyoN7NuIlEHKbox3ejh/Gt+/fH6ej3u7E7vptMx/ej6d2t/prG5X6L1YoZwhyLm4XzutbBJ4qZOkAeLzxA09MjP6RL+dGXNCkU+drbqHwkeEBTVmpK94uuaFvpRfS7pG4YrWL3SzsWgv/n7s+6lLPG43R7dYVQgFGLbj1S0m058gZosoGEcnS7FJy3HCLhvmH8TyLODeutGn5GXEauFC4KArfEEqQ8LKxCFAFmt5v9oJ3OZiB7ypexjPaKOovtda+Cw5jDBHd9HnUdp7St+ftMI0DzCFk4wd/ijPQPYEmkoCrHTz7nG4xjrgmu+XEIHEkNjlkrNtNSkEoa5H6BZjnRsDDDvixpg3yNyl9/0CiifFYKpg1LOqAOhq3KiArLPQXDU5cpXj+SpBJPJdWPznPTJMTDxDKGKstNw/aIaQyNASKBbRi+VcrzOphWlLIimLPk+3HZHqVSZQecfpXiHLxRzpWDpJxs50FBgpJIbiqjbqCZHUGzFLSKOdpHueNallnz7bY6d4XW8c0ABQmCGUER4yGV/wB/JEw8g++e7o1EhHgWipgHVVNSW2gU/m6NOI8resj/dzeKzQjtl/xQf700h9wcSiFrxFcdeKNNTM/BfWyAJdrght7AcTwfWYQMr4bYMiveuIHRiO1deOKeY0+adNPmj41CTpr0f4QzngCw5pJHAzzdH3NhNrpj1vc+fPB5jrkLUEOXKaer2eGM0QAXfd1me23rZJPfp2Y8uXb8gTkc+kN48UDGkz72kNm3BsgZXtnXg0rG16DsgikbmPkp76BoFaVAWtzga9Z1WQ/7c8o2wlKqcnRyDU+no2y/UvlUJ6Sl/iJCTbGr3W8GahMMxTB9GJ+rpgs5r1VzQPIbtG8hUTfDL4J/aEB3xocYh5fCIcS1ILu0u0dFUcn2IZz8OsP964FD7GY/Ik6TH23AtMO8+LvIgVJIWkXVdCk5NDGTxvxuvUW8IbcqMilfL3bcf7oixeycFOt8pNgn37mKXGx9kr4F7Duqd+klpLOiJzh2BWm0bUq0/KdJHGjeSpNzDNwyuGXDzpqCcca6kt2ea1UPmrX88nO2gqbOpErKrdCgQwt/Ci3nqWoV3XT7tsbBEA0GdstN26m+rZsA7cF78TXuaIkkTYrbWeiOW7e6ZmOpKyXUtiIOLGKdRt1cyU6LurGW7Yv69Cq165eBBhQXWn+e/gNupJZV+B8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=6b7d0bcd93ab071441a0f01bdd03d69e^sys_idNOT IN748d4bcd93ab071441a0f01bdd03d64c,e88d4bcd93ab071441a0f01bdd03d649,fc8d4bcd93ab071441a0f01bdd03d64a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Society Complaint - New Case Processing">6b7d0bcd93ab071441a0f01bdd03d69e</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 06:23:52</sys_created_on>
+        <sys_id>748d4bcd93ab071441a0f01bdd03d64c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 06:23:52</sys_updated_on>
+        <ui_id>2c01a726-49b3-4243-b8e0-c2efd7b3628f</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VV22rjMBD9laBnE+w4TZu8LQmBhV6gXfrSFDGW5FQgX1aS22ZD/n3HkuyEtnRT6EvYPEVz0zmjOeOHLZGczMhY8DiZJhOWJmk6iuPRxTjJJmmWjHgKQiQkIiUUAiO1YJXmeH4G1bSG7XauBVjBaTJkjdaitLsd+rk0tYLNfQhDC3uSiqOfzB4eI1KDxopWaDLbvnEdC0lBJhSG3naY3mK0m7o984o1BeKisjNehsxF8Ax+LtCDSS2cJI6IeLWi5AKB5KCMiEgBJQdb6Q2ZWd2gAUnzm1Jt+ognWVpPtIBXI//gzeO4jcsFMmOhCf2RhgZ5c74AC3dYmdlG9/2qJBPG94SLHBpl54c2H3BTW1mVPsVCprrsSjVFee07QvoCB+/RGAQh6pZni9zTyu+eqpfbDuRSlq4lgaKqGKj+BNZqmTW2hbMlQgnX4wLqWpZrWuvqWbpkhFIM1woPw1xVL3inketyCKzFPcSuwnCJ9oUz34OWLYkrLIPJu4iYjZkrMGZPBXtIfzctEk8sUKCuC64F1E1Cm8y0rO0PvOpZBOC7KAx9dvbZhLHpfqAOau4H/5Vi8vR8HFNTMSksTcKfDUXC+LQ4D5SBEe/FcOfjBvMubjD3cV+TyBEEOon8coPxMaGgkne2y8PcwbV3BI2cfZtGLk5JI4HGyYvkX9KIR58u34NJcmowB7JAEIjQsVzrqqlXTRynfLvqNLAis1UvgCUwqST+uYIS1q43KxKtfDEXmePNObuYTlM4RzTjcQJxHicZ51h1cpa5cGSPu/3I+A8+TieB+Wu74YgX7HbDUgrFzQdP2i0G0W4pK6h/4jfLITgH98HZf0S/bUMkk9j9TmhP/Dff0se/AU4PJUIKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=748d4bcd93ab071441a0f01bdd03d64c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Society Complaint - New Case Processing">6b7d0bcd93ab071441a0f01bdd03d69e</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>61a3e2ff-dc22-43c5-aa6a-769767feef56</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 06:23:51</sys_created_on>
+        <sys_id>e88d4bcd93ab071441a0f01bdd03d649</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 06:23:51</sys_updated_on>
+        <ui_id>0b3e5a55-5b15-487c-81f1-668060b9eda0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VV207jMBD9lcrPTRUnbZP2DRUhIbEgLZeXFbIce0wtORccB+hW/PvaiVtaCuWyC9K+JeMZz5kzczy/lkhyNEVDnHI+ETgUGOMQhyMc4RRSyFgyTiBOUR8VNAfrWZRGCsmokWVhrXdUNc6cCj5KwnA0iSFhMR4OMQ1FiDPOw5iP08i6cllXii6ufMR5ySSYRW9W5tYsC9MLepf6BuzHgQJtbASbS8U1FGj667qPKqotBAMaTZfPjt5bg6IZKOt6ul3Ey6WZReWsGgTYRAy86cTf8XPDXmruYMV9BA8GCg4Wj6Cqhj7KacGpKfUCTY1urEED5WeFWqw95rZ2ex9yvg+1/G2TxlF/I+8U1Ysa7iwzBHIqFaHMQ1z7EE/ubm3ikBp6blMz02jo8rB5KRnUHXccBG2UmW3aOoezqr2jDTE0U/uQsFI1eXHaEUmFAGaAEyFBcVIWpI1B62SrGbCWprbgoXKkORo6jsT5vLxfE3wki5Zez5cqGVXrP3EOVLP5kcvkeugQ9BE1RsusMa6gJWrkxW4vt7o9RS6xg9O6vtTjGgzx8IntKCWi1Dl1nWuRWA9QkDtqclpVsrghlS7vZIvc0pMPbpT9GQhV3tt7anlTDDr2Bu62wZG1H7bmK6qlY/uHvcYGO0yXhbxt4Lid8gmGJI7SYDKOWDCEeBRkPI4DjDMGQEFEHKPHvmvUTNG69i3phoXcNo461HbCc0668l1G0rLngpmWlTmw8O7AM/3YXz0VfJ/Moo2nQgOzwth4JJbLmZ1+Nxh4wBptmTWPj7svw8eV/zYkte6ox/Qco1c7L1nTNlHyZ3o/9Ce948MnxeP9iveWz0j+FXX/e0U/F++XqPQVPW6zva29bb6/RVsch0k8CVmQRKM4GIaMBlnKs4BmkRgNh+N0nH2tttL9Kyx6mtuNO5/09UDwBE+SYUjqdrkS7D8WhK22LGG0faze3Mazzu9jSnxHASslXrTz93JBXow7tpPN2N5pd+ClGH1Qit0Mv6DENPyPlLjegn8rxS2ut5W4xfa3CJFlWSYymAR2qdkll0AapBFNAhiFLBZRHIaJ+IQQX5Pf9R93JZ87BwsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e88d4bcd93ab071441a0f01bdd03d649"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Society Complaint - New Case Processing">6b7d0bcd93ab071441a0f01bdd03d69e</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>61a3e2ff-dc22-43c5-aa6a-769767feef56</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 06:23:52</sys_created_on>
+        <sys_id>fc8d4bcd93ab071441a0f01bdd03d64a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 13:53:21</sys_updated_on>
+        <ui_id>ca1e44c3-cc94-4f37-9bb9-e2d757216bba</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WTW/iMBD9K8jnKIoJ5etWUXHattK26h5KGznxBKx1PtZxaFnEf9/xRyiiRe1Ke0Fabp55Hr/3PM7wuCWCkykZUoguJnSYxTSO+1HUHw9oOoxT2ucxAxiQgJSsAERqlkpI7CIgayZbE3wpkkpxUBjioqkl2zz4zI9K/ezd+ly2EpIrKMn08SkgNVNYRWNmuj1KfZWTZClIhN4bUic46k39Yezb4d7ejUs4FdMoIPCqoeSARHImGwhIwUrOdKU2ZKpViwEFjN+WcrNHrESpsSAx2NdG/MZjx5HB5YDKMnC5/TLxVrlwfsU0u8PKmW6Vh2arSmTQOE845KyVenYYc4DbWouqdFusTL+7km1R3jhLyL5AdzMYaRskAbXRaZh7Gfndqnr53rGci9Ja4pOyypjcr5jWSqStNny2BCQUWCgpWF2LcpnUqloLuxm5FOFS4iLMZfWChzZiWYYsM8RDtJWFc4xf2fADU8KouMYyuHkXkGbTzCRrmjctaGLyqzVMnDKvIXE2mC2ZErW+xAPW4Onugq7ZOUSTk41F07dGsv3dHDQ6EreFkfaijaKYb7cz7AMNPKFh1iq0TIcHoN3uuVaiUkJvTuM7BIIbjTmHpM+oGO2wli5V1da+wqJ7YwsyXZA5y4TEzb1rhu0HJcM7690DKxYkWDjeFjceZXQyQt0xpNGIDgaURXlEU86x5vAit3A0OhH8i/idJ4hadPUht2uQa1H25qCQFrpyRCmajPL++MIcMRq8O4LGFm4b2sINOexYdcz08zK799+l/xd5rhf5l0Pk87feDZG5AMmbDx5/N0GgQEM0JO5jcDRFfLL34JN+ktB/NUnoMLK/M5onTtzZj5ODfw4nBsvTH444SXpHCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fc8d4bcd93ab071441a0f01bdd03d64a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=6b7d0bcd93ab071441a0f01bdd03d69e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6b7d0bcd93ab071441a0f01bdd03d69e^sys_idNOT INe08d4bcd93ab071441a0f01bdd03d647"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7bee54459327c31441a0f01bdd03d6b3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Society Complaint - New Case Processing">6b7d0bcd93ab071441a0f01bdd03d69e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 06:23:51</sys_created_on>
+        <sys_id>e08d4bcd93ab071441a0f01bdd03d647</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 13:53:20</sys_updated_on>
+        <ui_id>61a3e2ff-dc22-43c5-aa6a-769767feef56</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnQ9AjNhrfAgcBCrQ1kKS5tImwIimbKEWqfNhRBf97l3rYRm2gCdreejOHu8uZ4dBqifau9s4+6GtrxUqR+ZenCREqYPi7JQoqTuaEasWEE1qRCdmA9AFr24Xh4DjLk4h6Y7hyUW2ENsI1u91XH8cZS56Xd6+pS3EuE7aW0Dz+o/F0LSTD3V5iDQaVOW7IvP1lSzA8/Qqm5TSJpzRLZ1kax+m7y6SYZUWSsgz45QwHSii4xNLFkTdn7HJNHSDrjFCrYf1haL0fQW1YoJLGE8JfHFeMI4kSpOUTUoFi4LRpyNwZjwDKZUslm33FWiiH00iofbHiBw+T4jhUlhx1Ud7v7pf54HUPlzfgAKl46rwZSulaC8pt7wjjJXjpFsdYX7CsO5Vdi4NCjt1a+kp96s0g+wHj1SLiLZLgdVAauA9Cyvu13t6NLG+F6lwZNqWmIPcrcOhd4V3g0xIueYWD8grqGh3Na6M3omtGLlW0kriISqm3eGjIeQQ0EI/QWIhuEb/p4EcwIqj4iGOwGbNgc0uNqEdt3eFkNyG2sQsJ1h40orn5dx8Y9ooHbXlvT2jpBl3jwRs+yNhNTl9Y3gGHZ/bZrHDMxUJXeGPhok9eypmKt4W9jKFMrmhyPuyQnQv7RZ/h08iP/N+S++Q3uR+QVwV/Ov2f+z/OfaBZgBU0774FOC789fzF4D+FgPeH7s2mwiK3h4C9H79AYaPBRAl6DG21+RZUHbDdTyOwJojLBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6b7d0bcd93ab071441a0f01bdd03d69e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6b7d0bcd93ab071441a0f01bdd03d69e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6b7d0bcd93ab071441a0f01bdd03d69e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 06:23:49</sys_created_on>
+        <sys_id>088d4bcd93ab071441a0f01bdd03d62e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 06:23:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6b7d0bcd93ab071441a0f01bdd03d69e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 06:23:48</sys_created_on>
+        <sys_id>7f7d0bcd93ab071441a0f01bdd03d6be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 06:23:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6b7d0bcd93ab071441a0f01bdd03d69e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6b7d0bcd93ab071441a0f01bdd03d69e"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>2f0ebf709323c31441a0f01bdd03d69d</sys_id>
+        <latest_snapshot>6b7d0bcd93ab071441a0f01bdd03d69e</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=2f0ebf709323c31441a0f01bdd03d69d^sys_idNOT INd81ab685932b071441a0f01bdd03d6a0"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"d81ab685932b071441a0f01bdd03d6a0","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>2f0ebf709323c31441a0f01bdd03d69d</plan_id>
+        <snapshot>7caedd99936f471441a0f01bdd03d619</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-24 04:58:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d81ab685932b071441a0f01bdd03d6a0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-24 13:53:31</sys_updated_on>
+        <trigger display_value="">5364fcd1932b471441a0f01bdd03d682</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=2f0ebf709323c31441a0f01bdd03d69d"/>
+</record_update>

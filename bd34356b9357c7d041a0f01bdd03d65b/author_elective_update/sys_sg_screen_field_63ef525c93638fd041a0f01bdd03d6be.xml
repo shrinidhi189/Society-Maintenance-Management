@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_field">
+    <sys_sg_screen_field action="DELETE">
+        <data_item_field_name>resident_severity</data_item_field_name>
+        <execution_script/>
+        <field_name/>
+        <hidden>false</hidden>
+        <order>120</order>
+        <record_id_field/>
+        <screen display_value="Details Screen - Details">b1ef125c93638fd041a0f01bdd03d6d9</screen>
+        <screen_data_item_table>x_1919740_societ_1_society_complaint_case</screen_data_item_table>
+        <sys_class_name>sys_sg_screen_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 19:09:16</sys_created_on>
+        <sys_id>63ef525c93638fd041a0f01bdd03d6be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>resident_severity</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name>sys_sg_screen_field_63ef525c93638fd041a0f01bdd03d6be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 19:09:16</sys_updated_on>
+        <type>auto</type>
+        <value_only>false</value_only>
+    </sys_sg_screen_field>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</application>
+        <file_path/>
+        <instance_id>610511643b9047d8986d048aa4e45adb</instance_id>
+        <instance_name>dev381157</instance_name>
+        <name>sys_sg_screen_field_63ef525c93638fd041a0f01bdd03d6be</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_field"><sys_sg_screen_field action="INSERT_OR_UPDATE"><data_item_field_name>resident_severity</data_item_field_name><execution_script/><field_name/><hidden>false</hidden><order>120</order><record_id_field/><screen display_value="Details Screen - Details">b1ef125c93638fd041a0f01bdd03d6d9</screen><screen_data_item_table>x_1919740_societ_1_society_complaint_case</screen_data_item_table><sys_class_name>sys_sg_screen_field</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-21 19:09:16</sys_created_on><sys_id>63ef525c93638fd041a0f01bdd03d6be</sys_id><sys_mod_count>0</sys_mod_count><sys_name>resident_severity</sys_name><sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package><sys_policy/><sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope><sys_update_name>sys_sg_screen_field_63ef525c93638fd041a0f01bdd03d6be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-21 19:09:16</sys_updated_on><type>auto</type><value_only>false</value_only></sys_sg_screen_field></record_update>]]></payload>
+        <payload_hash>-347377640</payload_hash>
+        <record_name>resident_severity</record_name>
+        <reverted_from/>
+        <source>4234356b9357c7d041a0f01bdd03d6c3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 19:09:17</sys_created_on>
+        <sys_id>27ef525c93638fd041a0f01bdd03d6c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0c55f60250000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 19:09:17</sys_updated_on>
+        <type>Screen fields</type>
+        <update_guid>e3ef525c74638fd04fb08ddd4b35b0c0</update_guid>
+        <update_guid_history>e3ef525c74638fd04fb08ddd4b35b0c0:-347377640</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 19:10:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_screen_field">sys_sg_screen_field</sys_db_object>
+        <sys_id>3094d512c73640b4b541177637b6abd1</sys_id>
+        <sys_metadata>63ef525c93638fd041a0f01bdd03d6be</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>resident_severity</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_scope_delete display_value="">88476196a39e447ead7944b2d056ff24</sys_scope_delete>
+        <sys_update_name>sys_sg_screen_field_63ef525c93638fd041a0f01bdd03d6be</sys_update_name>
+        <sys_update_version display_value="sys_sg_screen_field_63ef525c93638fd041a0f01bdd03d6be">27ef525c93638fd041a0f01bdd03d6c1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 19:10:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

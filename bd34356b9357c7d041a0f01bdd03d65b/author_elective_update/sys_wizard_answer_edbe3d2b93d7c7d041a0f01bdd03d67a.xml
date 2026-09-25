@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>false</active>
+        <answer>New Society Maintenance Case</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Society Maintenance Case</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Case" name="Case">98d57c94c3102200e7c7d44d81d3aea9</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 08:48:42</sys_created_on>
+        <sys_id>edbe3d2b93d7c7d041a0f01bdd03d67a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Society Maintenance Case</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name>sys_wizard_answer_edbe3d2b93d7c7d041a0f01bdd03d67a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-19 08:48:42</sys_updated_on>
+        <table/>
+        <target_url>x_1919740_societ_1_society_maintenance_case.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</application>
+        <file_path/>
+        <instance_id>610511643b9047d8986d048aa4e45adb</instance_id>
+        <instance_name>dev381157</instance_name>
+        <name>sys_wizard_answer_edbe3d2b93d7c7d041a0f01bdd03d67a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>false</active><answer>New Society Maintenance Case</answer><button_label/><dependent_value/><element/><name>Society Maintenance Case</name><next_question/><order>100</order><payload_name/><question display_value="Case" name="Case">98d57c94c3102200e7c7d44d81d3aea9</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-19 08:48:42</sys_created_on><sys_id>edbe3d2b93d7c7d041a0f01bdd03d67a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Society Maintenance Case</sys_name><sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package><sys_policy/><sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope><sys_update_name>sys_wizard_answer_edbe3d2b93d7c7d041a0f01bdd03d67a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-19 08:48:42</sys_updated_on><table/><target_url>x_1919740_societ_1_society_maintenance_case.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>1884938960</payload_hash>
+        <record_name>Society Maintenance Case</record_name>
+        <reverted_from/>
+        <source>4234356b9357c7d041a0f01bdd03d6c3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 08:48:42</sys_created_on>
+        <sys_id>35be3d2b93d7c7d041a0f01bdd03d680</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0b8da81ad0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-19 08:48:42</sys_updated_on>
+        <type>Answer</type>
+        <update_guid>f1be3d2b0ed7c7d071c4b119a4ef567f</update_guid>
+        <update_guid_history>f1be3d2b0ed7c7d071c4b119a4ef567f:1884938960</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-20 15:34:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>3f3d589de5a54abab87012203cd5e171</sys_id>
+        <sys_metadata>edbe3d2b93d7c7d041a0f01bdd03d67a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Society Maintenance Case</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_parent display_value="Case">98d57c94c3102200e7c7d44d81d3aea9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_scope_delete display_value="">88476196a39e447ead7944b2d056ff24</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_edbe3d2b93d7c7d041a0f01bdd03d67a</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_edbe3d2b93d7c7d041a0f01bdd03d67a">35be3d2b93d7c7d041a0f01bdd03d680</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-20 15:34:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

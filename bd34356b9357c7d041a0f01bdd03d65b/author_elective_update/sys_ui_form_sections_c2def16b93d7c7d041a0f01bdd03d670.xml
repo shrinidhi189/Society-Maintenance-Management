@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections action="DELETE" form_id="c2def16b93d7c7d041a0f01bdd03d670" sys_domain="global" table="x_1919740_societ_1_society_maintenance_case" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-19 08:49:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5cee756b93d7c7d041a0f01bdd03d647</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1919740_societ_1_society_maintenance_case" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">c2def16b93d7c7d041a0f01bdd03d670</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">1fde356b93d7c7d041a0f01bdd03d6bc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-19 08:49:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-19 08:49:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>83de356b93d7c7d041a0f01bdd03d619</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1919740_societ_1_society_maintenance_case" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">c2def16b93d7c7d041a0f01bdd03d670</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">26def16b93d7c7d041a0f01bdd03d6c0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-19 08:49:20</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-19 08:49:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1bde356b93d7c7d041a0f01bdd03d671</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1919740_societ_1_society_maintenance_case" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">c2def16b93d7c7d041a0f01bdd03d670</sys_ui_form>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">0fde356b93d7c7d041a0f01bdd03d619</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-19 08:49:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-19 08:49:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aadef16b93d7c7d041a0f01bdd03d6bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1919740_societ_1_society_maintenance_case" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">c2def16b93d7c7d041a0f01bdd03d670</sys_ui_form>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">c2def16b93d7c7d041a0f01bdd03d674</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-19 08:49:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1919740_societ_1_society_maintenance_case</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-19 08:49:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c2def16b93d7c7d041a0f01bdd03d670</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1919740_societ_1_society_maintenance_case</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+            <sys_update_name>sys_ui_form_sections_c2def16b93d7c7d041a0f01bdd03d670</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-19 08:49:16</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</application>
+        <file_path/>
+        <instance_id>610511643b9047d8986d048aa4e45adb</instance_id>
+        <instance_name>dev381157</instance_name>
+        <name>sys_ui_form_sections_c2def16b93d7c7d041a0f01bdd03d670</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_form_sections form_id="c2def16b93d7c7d041a0f01bdd03d670" sys_domain="global" table="x_1919740_societ_1_society_maintenance_case" version="3"><sys_ui_form_section action="INSERT_OR_UPDATE"><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-19 08:49:25</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5cee756b93d7c7d041a0f01bdd03d647</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1919740_societ_1_society_maintenance_case" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">c2def16b93d7c7d041a0f01bdd03d670</sys_ui_form><sys_ui_section caption="NULL" display_value="" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">1fde356b93d7c7d041a0f01bdd03d6bc</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-19 08:49:25</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-19 08:49:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>83de356b93d7c7d041a0f01bdd03d619</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1919740_societ_1_society_maintenance_case" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">c2def16b93d7c7d041a0f01bdd03d670</sys_ui_form><sys_ui_section caption="Notes" display_value="Notes" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">26def16b93d7c7d041a0f01bdd03d6c0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-19 08:49:20</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-19 08:49:22</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1bde356b93d7c7d041a0f01bdd03d671</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1919740_societ_1_society_maintenance_case" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">c2def16b93d7c7d041a0f01bdd03d670</sys_ui_form><sys_ui_section caption="Related Records" display_value="Related Records" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">0fde356b93d7c7d041a0f01bdd03d619</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-19 08:49:22</sys_updated_on></sys_ui_form_section><sys_ui_form_section action="INSERT_OR_UPDATE"><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-19 08:49:18</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>aadef16b93d7c7d041a0f01bdd03d6bf</sys_id><sys_mod_count>0</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_1919740_societ_1_society_maintenance_case" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">c2def16b93d7c7d041a0f01bdd03d670</sys_ui_form><sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_1919740_societ_1_society_maintenance_case" sys_domain="global" view="Default view">c2def16b93d7c7d041a0f01bdd03d674</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-19 08:49:18</sys_updated_on></sys_ui_form_section><sys_ui_form action="INSERT_OR_UPDATE"><name>x_1919740_societ_1_society_maintenance_case</name><roles/><sys_class_name>sys_ui_form</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-19 08:49:16</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c2def16b93d7c7d041a0f01bdd03d670</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1919740_societ_1_society_maintenance_case</sys_name><sys_overrides/><sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package><sys_policy/><sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope><sys_update_name>sys_ui_form_sections_c2def16b93d7c7d041a0f01bdd03d670</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-19 08:49:16</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_form></sys_ui_form_sections></record_update>]]></payload>
+        <payload_hash>-2005215905</payload_hash>
+        <record_name>Society Maintenance Case</record_name>
+        <reverted_from/>
+        <source>4234356b9357c7d041a0f01bdd03d6c3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 08:49:26</sys_created_on>
+        <sys_id>58ee756b93d7c7d041a0f01bdd03d64b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0b8db29c70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-19 08:49:26</sys_updated_on>
+        <type>Form Sections</type>
+        <update_guid>58ee756bfed7c7d0ee7fe338df51374a</update_guid>
+        <update_guid_history>58ee756bfed7c7d0ee7fe338df51374a:-2005215905,c6def16ba5d7c7d07f22c3c55d7c8672:-674143861</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-20 15:32:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_form">sys_ui_form</sys_db_object>
+        <sys_id>21adad79a1184400a693cfc307c51000</sys_id>
+        <sys_metadata>c2def16b93d7c7d041a0f01bdd03d670</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1919740_societ_1_society_maintenance_case</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_parent display_value="">e8bef92b93d7c7d041a0f01bdd03d628</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_scope_delete display_value="">88476196a39e447ead7944b2d056ff24</sys_scope_delete>
+        <sys_update_name>sys_ui_form_sections_c2def16b93d7c7d041a0f01bdd03d670</sys_update_name>
+        <sys_update_version display_value="sys_ui_form_sections_c2def16b93d7c7d041a0f01bdd03d670">58ee756b93d7c7d041a0f01bdd03d64b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-20 15:32:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

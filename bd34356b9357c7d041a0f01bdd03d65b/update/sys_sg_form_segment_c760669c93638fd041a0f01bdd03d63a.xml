@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_form_segment">
+    <sys_sg_form_segment action="INSERT_OR_UPDATE">
+        <embedded_screen display_value="Details Screen - Details">b660669c93638fd041a0f01bdd03d636</embedded_screen>
+        <form display_value="Society Complaint Case - Case">f260669c93638fd041a0f01bdd03d632</form>
+        <header_view_config/>
+        <is_sticky>false</is_sticky>
+        <order/>
+        <sys_class_name>sys_sg_form_segment</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 19:11:26</sys_created_on>
+        <sys_id>c760669c93638fd041a0f01bdd03d63a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name>sys_sg_form_segment_c760669c93638fd041a0f01bdd03d63a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 19:11:26</sys_updated_on>
+    </sys_sg_form_segment>
+</record_update>

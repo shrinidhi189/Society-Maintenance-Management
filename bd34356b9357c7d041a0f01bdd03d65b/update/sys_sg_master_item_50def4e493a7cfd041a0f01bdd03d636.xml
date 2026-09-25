@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition_order/>
+        <datasource_table>x_1919740_societ_1_society_complaint_case</datasource_table>
+        <datasource_table_condition/>
+        <embedded_screen display_value="My Complaints Form Screen">44deb4e493a7cfd041a0f01bdd03d6e3</embedded_screen>
+        <item_view/>
+        <name>My Complaints Form Screen Master Item</name>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-22 06:43:28</sys_created_on>
+        <sys_id>50def4e493a7cfd041a0f01bdd03d636</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Complaints Form Screen Master Item</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name>sys_sg_master_item_50def4e493a7cfd041a0f01bdd03d636</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-22 06:43:28</sys_updated_on>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="My Complaints List Screen View Config">00cef0e493a7cfd041a0f01bdd03d691</view_config>
+    </sys_sg_master_item>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="DELETE">
+        <creation_method>MAB W2M</creation_method>
+        <name>text_06_element</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 19:09:27</sys_created_on>
+        <sys_id>5affd25c93638fd041a0f01bdd03d687</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text_06_element</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_5affd25c93638fd041a0f01bdd03d687</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 19:09:27</sys_updated_on>
+        <view_config display_value="Society Complaint Case - Record Screen Card">edef125c93638fd041a0f01bdd03d698</view_config>
+        <view_template_slot display_value="text_06">48bc5ac2bd559e90f877dac13f1310e1</view_template_slot>
+    </sys_sg_view_config_element>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</application>
+        <file_path/>
+        <instance_id>610511643b9047d8986d048aa4e45adb</instance_id>
+        <instance_name>dev381157</instance_name>
+        <name>sys_sg_view_config_element_5affd25c93638fd041a0f01bdd03d687</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element"><sys_sg_view_config_element action="INSERT_OR_UPDATE"><creation_method>MAB W2M</creation_method><name>text_06_element</name><sys_class_name>sys_sg_view_config_element</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-21 19:09:27</sys_created_on><sys_id>5affd25c93638fd041a0f01bdd03d687</sys_id><sys_mod_count>0</sys_mod_count><sys_name>text_06_element</sys_name><sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package><sys_policy/><sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope><sys_update_name>sys_sg_view_config_element_5affd25c93638fd041a0f01bdd03d687</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-21 19:09:27</sys_updated_on><view_config display_value="Society Complaint Case - Record Screen Card">edef125c93638fd041a0f01bdd03d698</view_config><view_template_slot display_value="text_06">48bc5ac2bd559e90f877dac13f1310e1</view_template_slot></sys_sg_view_config_element></record_update>]]></payload>
+        <payload_hash>1788503013</payload_hash>
+        <record_name>text_06_element</record_name>
+        <reverted_from/>
+        <source>4234356b9357c7d041a0f01bdd03d6c3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 19:09:28</sys_created_on>
+        <sys_id>9effd25c93638fd041a0f01bdd03d68a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0c55f8bef0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 19:09:28</sys_updated_on>
+        <type>Card element</type>
+        <update_guid>5effd25c2d638fd0ec42ac9898204889</update_guid>
+        <update_guid_history>5effd25c2d638fd0ec42ac9898204889:1788503013</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 19:10:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_view_config_element">sys_sg_view_config_element</sys_db_object>
+        <sys_id>e75c8455912241509470158cd2098661</sys_id>
+        <sys_metadata>5affd25c93638fd041a0f01bdd03d687</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text_06_element</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_scope_delete display_value="">88476196a39e447ead7944b2d056ff24</sys_scope_delete>
+        <sys_update_name>sys_sg_view_config_element_5affd25c93638fd041a0f01bdd03d687</sys_update_name>
+        <sys_update_version display_value="sys_sg_view_config_element_5affd25c93638fd041a0f01bdd03d687">9effd25c93638fd041a0f01bdd03d68a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 19:10:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

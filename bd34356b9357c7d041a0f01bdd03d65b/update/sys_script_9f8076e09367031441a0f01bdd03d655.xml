@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1919740_societ_1_society_complaint_case</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Auto-Categorize and Prioritize Complaint</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) {
+
+    // 1. Auto-categorize based on Description keywords
+    if (current.complaint_category.nil()) {
+
+        var desc = (current.description + '').toLowerCase();
+
+        if (desc.indexOf('leak') > -1 ||
+            desc.indexOf('pipe') > -1 ||
+            desc.indexOf('drain') > -1) {
+
+            current.complaint_category = 'plumbing';
+
+        } else if (desc.indexOf('tap') > -1 ||
+                   desc.indexOf('water supply') > -1 ||
+                   desc.indexOf('no water') > -1 ||
+                   desc.indexOf('water') > -1) {
+
+            current.complaint_category = 'water_supply';
+
+        } else if (desc.indexOf('wire') > -1 ||
+                   desc.indexOf('power') > -1 ||
+                   desc.indexOf('short circuit') > -1 ||
+                   desc.indexOf('electric') > -1) {
+
+            current.complaint_category = 'electrical';
+
+        } else if (desc.indexOf('lift') > -1 ||
+                   desc.indexOf('elevator') > -1) {
+
+            current.complaint_category = 'lift_elevator';
+
+        } else if (desc.indexOf('air conditioner') > -1 ||
+                   desc.indexOf('cooling') > -1 ||
+                   desc.indexOf('hvac') > -1 ||
+                   desc.indexOf('a/c') > -1) {
+
+            current.complaint_category = 'hvac';
+
+        } else if (desc.indexOf('cctv') > -1 ||
+                   desc.indexOf('gate') > -1 ||
+                   desc.indexOf('guard') > -1 ||
+                   desc.indexOf('security') > -1) {
+
+            current.complaint_category = 'security';
+
+        } else if (desc.indexOf('generator') > -1 ||
+                   desc.indexOf('genset') > -1) {
+
+            current.complaint_category = 'generator';
+
+        } else if (desc.indexOf('pest') > -1 ||
+                   desc.indexOf('cockroach') > -1 ||
+                   desc.indexOf('rodent') > -1 ||
+                   desc.indexOf('mosquito') > -1 ||
+                   desc.indexOf('termite') > -1) {
+
+            current.complaint_category = 'pest_control';
+
+        } else if (desc.indexOf('clean') > -1 ||
+                   desc.indexOf('garbage') > -1 ||
+                   desc.indexOf('trash') > -1 ||
+                   desc.indexOf('waste') > -1) {
+
+            current.complaint_category = 'cleaning';
+
+        } else if (desc.indexOf('crack') > -1 ||
+                   desc.indexOf('wall') > -1 ||
+                   desc.indexOf('ceiling') > -1 ||
+                   desc.indexOf('floor') > -1) {
+
+            current.complaint_category = 'civil';
+
+        } else {
+
+            current.complaint_category = 'other';
+        }
+    }
+
+
+    // 2. Calculate base priority from Resident Severity
+
+    var severity = current.resident_severity + '';
+    var basePriority = 4;
+
+    if (severity == 'critical') {
+        basePriority = 1;
+
+    } else if (severity == 'high') {
+        basePriority = 2;
+
+    } else if (severity == 'medium') {
+        basePriority = 3;
+
+    } else if (severity == 'low') {
+        basePriority = 4;
+    }
+
+
+    // 3. Increase priority when the linked asset has problems
+
+    if (!current.cmdb_ci.nil()) {
+
+        var asset = current.cmdb_ci.getRefRecord();
+
+        if (asset.isValidRecord()) {
+
+            var health = parseInt(
+                asset.getValue('health_index') || '100',
+                10
+            );
+
+            var failures = parseInt(
+                asset.getValue('recurring_failures') || '0',
+                10
+            );
+
+            if (health <= 40 || failures >= 3) {
+
+                basePriority = Math.min(basePriority, 1);
+
+            } else if (health <= 70 || failures >= 1) {
+
+                basePriority = Math.min(basePriority, 2);
+            }
+        }
+    }
+
+
+    // 4. Set final priority
+
+    current.priority = basePriority;
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-22 15:10:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9f8076e09367031441a0f01bdd03d655</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Auto-Categorize and Prioritize Complaint</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name>sys_script_9f8076e09367031441a0f01bdd03d655</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-22 15:10:08</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=9f8076e09367031441a0f01bdd03d655"/>
+</record_update>

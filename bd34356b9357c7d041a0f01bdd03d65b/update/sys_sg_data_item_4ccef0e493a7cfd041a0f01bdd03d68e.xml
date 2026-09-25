@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_data_item">
+    <sys_sg_data_item action="INSERT_OR_UPDATE">
+        <condition_type>declarative</condition_type>
+        <description/>
+        <group_by/>
+        <instance_relative_url_qc/>
+        <name>My Complaints Data Item</name>
+        <offline_query_condition/>
+        <offline_query_condition_script/>
+        <query_condition/>
+        <query_condition_script/>
+        <sys_class_name>sys_sg_data_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-22 06:43:10</sys_created_on>
+        <sys_id>4ccef0e493a7cfd041a0f01bdd03d68e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Complaints Data Item</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name>sys_sg_data_item_4ccef0e493a7cfd041a0f01bdd03d68e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-22 06:43:10</sys_updated_on>
+        <table>x_1919740_societ_1_society_complaint_case</table>
+    </sys_sg_data_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=4ccef0e493a7cfd041a0f01bdd03d68e"/>
+</record_update>

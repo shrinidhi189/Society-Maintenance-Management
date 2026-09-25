@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="e89cc78093a70fd041a0f01bdd03d654" extends="cmdb_ci_facility_hardware" label="Society Asset" max_length="40" name="x_1919740_societ_1_society_asset" type="collection">
+        <element default="0" label="Recurring Failures" max_length="40" name="recurring_failures" type="integer"/>
+        <element default="100" label="Health Index" max_length="40" name="health_index" type="integer"/>
+        <element label="AMC Vendor" max_length="100" name="amc_vendor" type="string"/>
+        <element choice="1" label="Asset Type" max_length="40" name="asset_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="HVAC/Cooling" value="hvac"/>
+                <element inactive_on_update="false" label="Power Equipment" value="power"/>
+                <element inactive_on_update="false" label="Electrical" value="electrical"/>
+                <element inactive_on_update="false" label="Elevator/Lift" value="elevator"/>
+                <element inactive_on_update="false" label="Security" value="security"/>
+                <element inactive_on_update="false" label="Plumbing" value="plumbing"/>
+                <element inactive_on_update="false" label="Civil/Structural" value="civil"/>
+                <element inactive_on_update="false" label="Other" value="other"/>
+            </choice>
+        </element>
+    </element>
+</database>

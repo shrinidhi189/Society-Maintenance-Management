@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="INSERT_OR_UPDATE">
+        <creation_method>MAB W2M</creation_method>
+        <name>text_05_element</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-21 19:11:46</sys_created_on>
+        <sys_id>80802a9c93638fd041a0f01bdd03d618</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text_05_element</sys_name>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Society Maintenance Management">bd34356b9357c7d041a0f01bdd03d65b</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_80802a9c93638fd041a0f01bdd03d618</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-21 19:11:46</sys_updated_on>
+        <view_config display_value="Society Complaint Case - Record Screen Card">2e60a25893638fd041a0f01bdd03d670</view_config>
+        <view_template_slot display_value="text_05">80bc5ac2bd559e90f877dac13f1310da</view_template_slot>
+    </sys_sg_view_config_element>
+</record_update>

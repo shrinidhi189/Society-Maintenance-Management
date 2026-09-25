@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="7306e0049323cbd041a0f01bdd03d630" extends="sn_customerservice_case" label="Society Complaint Case" max_length="40" name="x_1919740_societ_1_society_complaint_case" type="collection">
+        <element label="Resident Name" max_length="100" name="resident_name" type="string"/>
+        <element choice="1" label="Complaint Scope" max_length="40" name="x_1919740_societ_1_complaint_scope" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Common Area" value="common_area"/>
+                <element inactive_on_update="false" label="Flat/Block" value="flat"/>
+            </choice>
+        </element>
+        <element choice="1" label="After-Fix Confirmation" max_length="40" name="after_fix_confirmation" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Fixed &amp; Verified" sequence="1" value="fixed_verified"/>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Not Fixed" sequence="2" value="not_fixed"/>
+            </choice>
+        </element>
+        <element label="Duplicate Case" max_length="32" name="duplicate_case" reference="x_1919740_societ_1_society_complaint_case" type="reference"/>
+        <element label="Block / Flat Number" max_length="40" name="block" type="string"/>
+        <element choice="3" label="Complaint Category" max_length="40" name="complaint_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Generator" sequence="7" value="generator"/>
+                <element inactive_on_update="false" label="HVAC/Cooling" value="hvac"/>
+                <element inactive_on_update="false" label="Water Supply" sequence="6" value="water_supply"/>
+                <element inactive_on_update="false" label="Civil" sequence="9" value="civil"/>
+                <element inactive_on_update="false" label="Plumbing" sequence="1" value="plumbing"/>
+                <element inactive_on_update="false" label="Security" sequence="4" value="security"/>
+                <element inactive_on_update="false" label="Pest Control" sequence="5" value="pest_control"/>
+                <element inactive_on_update="false" label="Other" sequence="3" value="other"/>
+                <element inactive_on_update="false" label="Lift/Elevator" sequence="8" value="lift_elevator"/>
+                <element inactive_on_update="false" label="Cleaning" sequence="2" value="cleaning"/>
+                <element inactive_on_update="false" label="Electrical" sequence="0" value="electrical"/>
+            </choice>
+        </element>
+        <element choice="1" label="Resident Severity" max_length="255" name="resident_severity" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="High" sequence="3" value="high"/>
+                <element inactive_on_update="false" label="Critical" sequence="2" value="critical"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+            </choice>
+        </element>
+        <element choice="1" label="Complaint Channel" max_length="40" name="complaint_channel" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Other" sequence="0" value="other"/>
+                <element inactive_on_update="false" label="WhatsApp" sequence="6" value="whatsapp"/>
+                <element inactive_on_update="false" label="IVR" sequence="1" value="ivr"/>
+                <element inactive_on_update="false" label="Verbal" sequence="3" value="verbal"/>
+                <element inactive_on_update="false" label="Phone Call" sequence="5" value="phone_call"/>
+                <element inactive_on_update="false" label="Portal" sequence="4" value="portal"/>
+                <element inactive_on_update="false" label="Email" sequence="2" value="email"/>
+            </choice>
+        </element>
+    </element>
+</database>

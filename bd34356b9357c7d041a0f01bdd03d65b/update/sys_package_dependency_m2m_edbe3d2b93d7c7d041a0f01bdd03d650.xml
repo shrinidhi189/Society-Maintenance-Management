@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Customer Service" source="sn_customerservice">51d811fad7223100b7490ee60e61034f</dependency>
+        <min_version>29.0.20</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-19 08:48:41</sys_created_on>
+        <sys_id>edbe3d2b93d7c7d041a0f01bdd03d650</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Society Maintenance Management" source="x_1919740_societ_1">bd34356b9357c7d041a0f01bdd03d65b</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-19 08:48:41</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>
